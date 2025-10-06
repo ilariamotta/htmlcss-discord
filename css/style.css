@@ -7,25 +7,29 @@
 
 body {
     background-color: rgb(75, 210, 255);
+    font-family: sans-serif;
 }
 
 /* DEBUG */
+
+.header {
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+}
 
 .header-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    min-width: 600px;
-    min-height: 30px;
-    margin: 10px 0;
-    background-color: darkorange;
-    border: 2px dotted black
+    padding-left: 40px;
 }
 
 .nav-container {
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
 
 
@@ -37,6 +41,7 @@ body {
     align-items: center;
     height: 600px;
     max-width: auto;
+   
 
 }
 
@@ -112,6 +117,27 @@ background-color: darkcyan;
 }
 
 /* UTILITY */
+.button {
+    background-color: rgb(255, 255, 255);
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    vertical-align: center;
+}
+
+a {
+    text-decoration: none
+}
+
+.link-white {
+color: white;
+vertical-align: center;
+}
+
+.link-black {
+    color: black;
+    vertical-align: center;
+}
 
 .bg-blue {
     background-color: rgb(0, 113, 218);
@@ -126,13 +152,6 @@ background-color: darkcyan;
 }
 
 /* HEADER */
-header {
-    display: flex;
-    background-color: lightblue;
-    justify-content: center;
-    min-height: 60px;
-    height: 100%;
-}
 
 ul {
     list-style: none;
