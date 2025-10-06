@@ -6,24 +6,27 @@
 }
 
 body {
-    background-color: rgb(75, 210, 255);
+    /* background-color: rgb(75, 210, 255); */
     font-family: sans-serif;
 }
 
 /* DEBUG */
 
 .header {
-    background-color: blue;
+    background-color: #255ee9;
     display: flex;
     justify-content: space-between;
+    align-content: center;
+    align-items: center;
 }
 
 .header-container {
+    background-color: #255ee9;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 40px;
+    padding-top: 15px;
 }
 
 .nav-container {
@@ -35,17 +38,20 @@ body {
 
 .flex-container-1 {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 60%;
-   
-
+    width: 100%;
+    min-height: 600px;
+    background-image: url(../img/jumbo.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
 }
+
 
 .flex-container-2 {
     background-color: rgb(255, 255, 255);
-        background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -66,7 +72,7 @@ body {
 
 .container-footer {
     background-color: #424242;
-    display:flex;
+    display: flex;
     justify-content: center;
     width: auto;
     height: 500px;
@@ -84,7 +90,7 @@ body {
 }
 
 .container-footer-others {
-background-color: darkcyan;
+    background-color: darkcyan;
     display: flex;
     width: 70%;
     justify-content: row;
@@ -97,24 +103,38 @@ background-color: darkcyan;
     justify-content: row;
     border: dotted 2px white;
 }
- .last-footer {
+
+.last-footer {
     background-color: #424242;
     display: flex;
     justify-content: center;
     height: 200px;
     padding: 20px;
- }
+}
+
 .aqua-container {
-  background-color: aquamarine;
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  width: 1200px;
-  height: 40px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 40px;
 }
 
 /* UTILITY */
+h1 {
+    font-size: 3rem;
+}
+
+.line-height1 {
+    line-height: 1.5;
+}
+
+.text-center {
+    text-align: center;
+}
+
 .flex {
     display: flex;
 }
@@ -123,12 +143,19 @@ background-color: darkcyan;
     color: white;
 }
 
-.button {
+.button-white {
     background-color: rgb(255, 255, 255);
-    width: 60px;
-    height: 30px;
-    border-radius: 15px;
-    vertical-align: center;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 10px;
+
+}
+
+.button-black {
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    display: inline-block;
+    padding: 10px;
 }
 
 a {
@@ -136,8 +163,8 @@ a {
 }
 
 .link-white {
-color: white;
-vertical-align: center;
+    color: white;
+    vertical-align: center;
 }
 
 .link-black {
@@ -159,11 +186,6 @@ vertical-align: center;
 
 /* HEADER */
 
-.img1 {
-    background-image: url(../img/jumbo.png);
-    background-position: center;
-    background-size: cover;
-}
 
 ul {
     list-style: none;
@@ -182,44 +204,47 @@ li {
 
 .content-1 {
     /* width: 800px;
-    height: 400px; */
-    /* display: flex; */
+    height: 400px;
+    display: flex;
+    flex-direction: row; */
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .content-2 {
-display: flex;
-/* width: auto;
+    display: flex;
+    /* width: auto;
 height: 400px;
 width: 60%; */
-flex-basis: 60%;
-/* min-width: 300px; */
-height:400 px;
-border: 2px black dotted;
+    flex-basis: 60%;
+    /* min-width: 300px; */
+    height: 400 px;
+    border: 2px black dotted;
 }
 
 .content-3 {
-display: flex;
-/* width: 40%; */
-flex-basis: 40%;
-/* min-width: 200px; */
-height: 400px;
-border: 2px black dotted;
+    display: flex;
+    /* width: 40%; */
+    flex-basis: 40%;
+    /* min-width: 200px; */
+    height: 400px;
+    border: 2px black dotted;
 }
 
 .content-3-alt {
-display: flex;
-width: 40%;
-height: 400px;
-border: 2px black dotted;
-order:-1;
+    display: flex;
+    width: 40%;
+    height: 400px;
+    border: 2px black dotted;
+    order: -1;
 }
 
 .content-4 {
     background-color: green;
-    display:flex;
+    display: flex;
     width: 900px;
     height: 500px;
-    border:2px black dotted;
+    border: 2px black dotted;
 }
 
 /* FOOTER */
@@ -232,10 +257,10 @@ footer {
 
 
 .footer-elements {
-  background-color: lightpink;
-  border: 2px dotted black;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  height: 20px;
+    background-color: lightpink;
+    border: 2px dotted black;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    height: 20px;
 }
