@@ -60,10 +60,7 @@ body {
 .flex-container-3 {
     background-color: lightgray;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
+    padding: 160px;
 }
 
 .container-footer {
@@ -119,6 +116,11 @@ body {
 }
 
 /* UTILITY */
+
+img {
+    display: inline-block;
+}
+
 h1 {
     font-size: 3rem;
 }
@@ -166,14 +168,6 @@ a {
 .link-black {
     color: black;
     vertical-align: center;
-}
-
-.bg-blue {
-    background-color: rgb(0, 113, 218);
-}
-
-.bg-pink {
-    background-color: lightpink;
 }
 
 #alt {
@@ -234,11 +228,9 @@ li {
 }
 
 .content-4 {
-    background-color: green;
     display: flex;
-    width: 900px;
-    height: 500px;
-    border: 2px black dotted;
+    flex-direction: column;
+
 }
 
 
